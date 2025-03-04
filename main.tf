@@ -5,7 +5,7 @@ provider "aws" {
 module "eks_cluster" {
   source = "./eks"
 
-  cluster_name    = "my-eks-cluster"
+  cluster_name    = "liontech-dev"
   subnet_ids      = ["subnet-0123456789abcdef0", "subnet-0123456789abcdef1"]
   node_desired_size = 2
   node_max_size     = 3
